@@ -176,18 +176,20 @@ function HeroSection() {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 py-16 lg:py-24">
             {/* Left: text */}
-            <div className="flex flex-col items-start text-left max-w-[580px] mx-auto lg:mx-0">
+            <div className="flex flex-col items-start text-left w-full max-w-[580px] mx-auto lg:mx-0">
               
-              {/* Abuad Basketball League Logo */}
-              <img src={ballupLogo} alt="Abuad Basketball League" className="w-[260px] md:w-[380px] object-contain -mb-4" />
-              
-              <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-1 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
-                pRESENTS
-              </p>
-              
-              {/* BALL UP 7.0 Scoreboard */}
-              <div className="mb-4">
-                <Scoreboard />
+              <div className="flex flex-col items-start w-fit">
+                {/* Abuad Basketball League Logo - Centered above the scoreboard */}
+                <img src={ballupLogo} alt="Abuad Basketball League" className="w-[260px] md:w-[380px] object-contain -mb-2 self-center" />
+                
+                <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-1 pl-1 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
+                  pRESENTS
+                </p>
+                
+                {/* BALL UP 7.0 Scoreboard */}
+                <div className="mb-4">
+                  <Scoreboard />
+                </div>
               </div>
 
               <motion.p 
