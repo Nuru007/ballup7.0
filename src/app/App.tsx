@@ -174,31 +174,33 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10 min-h-screen flex items-center pt-[72px]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 py-16 lg:py-24">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 py-16 lg:py-24">
             {/* Left: text */}
-            <div className="flex flex-col items-start text-left max-w-[580px] mx-auto">
+            <div className="flex flex-col items-start text-left max-w-[580px] mx-auto lg:mx-0">
               
               {/* Abuad Basketball League Logo */}
-              <img src={ballupLogo} alt="Abuad Basketball League" className="w-[260px] md:w-[380px] object-contain -mb-2" />
+              <img src={ballupLogo} alt="Abuad Basketball League" className="w-[260px] md:w-[380px] object-contain -mb-4" />
               
-              <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-0 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
+              <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-1 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
                 pRESENTS
               </p>
               
               {/* BALL UP 7.0 Scoreboard */}
-              <Scoreboard />
+              <div className="mb-4">
+                <Scoreboard />
+              </div>
 
               <motion.p 
                 initial={{ opacity: 0, y: 20 }} 
                 whileInView={{ opacity: 1, y: 0 }} 
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="font-['Epilogue'] font-semibold text-white text-sm lg:text-base tracking-[-0.5px] uppercase mb-8 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]"
+                className="font-['Epilogue'] font-semibold text-white text-sm lg:text-base tracking-[-0.5px] uppercase mb-6 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]"
               >
                 SPONSORED BY: pROF EDDIE BABALOLA
               </motion.p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
                 <motion.a
                   href="#tickets"
                   initial={{ opacity: 0, y: 20 }} 
