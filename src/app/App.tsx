@@ -270,8 +270,9 @@ function AboutSection() {
   return (
     <section id="about" className="relative bg-[#0f0604] py-24 overflow-hidden">
       {/* Background texture */}
-      <div className="absolute inset-0 opacity-15 pointer-events-none">
-        <img src={sectionBg} alt="" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 pointer-events-none">
+        <img src={sectionBg} alt="" className="w-full h-full object-cover opacity-50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0f0604] via-[#0f0604]/40 to-[#0f0604]" />
       </div>
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -468,8 +469,9 @@ function TicketsSection() {
   ];
   return (
     <section id="tickets" className="relative bg-[#0f0604] py-24 overflow-hidden">
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <img src={sectionBg} alt="" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 pointer-events-none">
+        <img src={sectionBg} alt="" className="w-full h-full object-cover opacity-50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0f0604] via-[#0f0604]/40 to-[#0f0604]" />
       </div>
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
@@ -491,11 +493,10 @@ function TicketsSection() {
 function CtaSection() {
   return (
     <section className="relative bg-[#210e0c] py-40 overflow-hidden">
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <img src={ctaBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-white mix-blend-saturation" />
+      <div className="absolute inset-0 pointer-events-none">
+        <img src={ctaBg} alt="" className="w-full h-full object-cover opacity-60" />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#210e0c] via-[rgba(33,14,12,0.9)] to-[rgba(33,14,12,0.2)]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#210e0c] via-[rgba(33,14,12,0.8)] to-[rgba(33,14,12,0.4)] pointer-events-none" />
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
