@@ -26,7 +26,7 @@ export default function Scoreboard() {
   }, [topVisibleCount, bottomVisibleCount, topText.length, bottomText.length]);
 
   return (
-    <div className="flex flex-col items-center mb-6 mt-1 relative w-full px-4">
+    <div className="flex flex-col items-center mb-6 mt-1 relative w-full">
       {/* Top Panel (BALL UP) */}
       <ScoreboardPanel 
         text={topText}

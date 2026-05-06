@@ -182,7 +182,7 @@ function HeroSection() {
                 {/* Abuad Basketball League Logo - Centered above the scoreboard */}
                 <img src={ballupLogo} alt="Abuad Basketball League" className="w-[260px] md:w-[380px] object-contain -mb-2 self-center" />
                 
-                <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-1 pl-1 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
+                <p className="font-['Epilogue'] italic text-[#e60000] text-lg lg:text-2xl tracking-[-0.5px] uppercase mb-1 [text-shadow:0_0_15px_rgba(230,0,0,0.8)]">
                   pRESENTS
                 </p>
                 
